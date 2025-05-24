@@ -9,7 +9,7 @@ services:
     volumes:
       - ./src:/var/www/html
     ports:
-      - "8080:80"
+      - "23455:80"
     depends_on:
       - db
 
@@ -34,7 +34,7 @@ services:
       PMA_USER: debug
       PMA_PASSWORD: debugpass
     ports:
-      - "8081:80"
+      - "23456:80"
     depends_on:
       - db
 
